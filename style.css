@@ -171,9 +171,6 @@ flex-direction: column;
 color:#22181c;
 }
 
-.btn_element{
-align-self:flex-end;
-}
 
 .title_element{
 text-align: center;
@@ -220,6 +217,7 @@ border-radius: 5px;
 border-color:black;
 background-color: #f7e1d7;
 cursor: pointer;
+color: #22181c;
 }
 
 .element_img{
