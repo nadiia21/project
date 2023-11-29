@@ -277,12 +277,13 @@ color: aliceblue;
 .photo {
     position: relative;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 .img_photo {
-    width: 100dvi;
-    height: auto;
-    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 .text_photo{
@@ -297,6 +298,7 @@ backdrop-filter: blur(15px);
 color:#e9c9bc;
 line-height: 107%;
 padding: 5px;
+-webkit-backdrop-filter: blur(15px);
 }
 
 
@@ -313,6 +315,7 @@ padding: 5px;
         font-size: 65px;
         max-width: 430px;
     }
+
 }
 
 @media (max-width: 1024.98px){
@@ -336,6 +339,12 @@ padding: 5px;
     .text_photo{
     font-size: 60px;
     max-width: 400px;
+    }
+
+    .img_photo{
+   width: 100%;
+   height: 600px;
+   object-fit: none;
     }
 }
 
@@ -400,6 +409,11 @@ padding: 5px;
         max-width: 200px;
     }
 
+    .img_photo{
+        width: 100%;
+        height: 500px;
+        object-fit: none;
+         }
 }
 
 @media (max-width: 425.98px){
@@ -414,6 +428,7 @@ font-size: 18px;
 .price_element{
 font-size: 20px;
 }
+
 
 .grid{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -431,6 +446,12 @@ font-size: 20px;
     font-size: 22px;
     max-width: 130px;
     }
+
+    .img_photo{
+        width: 100%;
+        height: 400px;
+        object-fit: none;
+         }
 }
 
 .input_burger:checked  ~ .container_list{
