@@ -355,15 +355,17 @@ border-radius: 5px;
 }
 
 .title_staff{
-padding-inline: 8px;
 text-align: center;
 color: #22181c;
 font-size: 28px;
 padding-bottom: 10px;
 }
 
+.text_grid{
+padding: 8px;
+}
+
 .subtitle_staff{
-padding-inline: 8px;
 color: #22181c;
 font-size: 22px;
 }
@@ -527,7 +529,7 @@ margin-bottom: 35px;
     }
     
     .element_list{
-         font-size: 17px;
+         font-size: 20px;
     }
             
     .element_list::before {
@@ -588,12 +590,12 @@ font-size: 20px;
     }
 
     .location_text{
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 15px;
     }
     
     .element_list{
-         font-size: 15px;
+         font-size: 20px;
     }
             
     .element_list::before {
