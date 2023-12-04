@@ -383,6 +383,61 @@ margin-bottom: 35px;
     gap: 10px;
 }
 
+.work_container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    margin-top: 20px;
+}
+
+.work_text{
+text-align: center;
+color:#e9bcb5;
+font-size: 45px;
+}
+
+.job_list, .offer_list{
+font-size: 30px;
+color: #e9bcb5;
+list-style-type: none;
+margin-block: 20px;
+}
+
+.job_list > li::before, .offer_list > li::before {
+    content: "\25A0";
+    color:#e9c9bc;
+    font-size: 35px;
+    margin-right: 5px;
+}
+
+.requirements{
+font-size: 35px;
+margin-top: 15px;
+color:#22181c;
+background-color:  #f7e4dc;
+padding-inline: 5px;
+}
+
+.apply_now{
+margin-top: 50px;
+text-align: center;
+}
+
+.apply_text{
+    text-align: center;
+    font-size: 35px;
+    color:#22181c;
+}
+
+.btn_apply{
+padding: 20px;
+background-color: #f7e1d7;
+margin-top: 50px;
+font-size: 30px;
+border-color: #22181c;
+color: #22181c;
+}
 
 @media (max-width: 1320.98px){
     .grid{
@@ -454,6 +509,30 @@ margin-bottom: 35px;
     font-size: 18px;
     }
 
+    .work_text{
+    font-size: 40px;
+    }
+
+    .requirements{
+    font-size: 25px;
+    }
+
+    .job_list, .offer_list{
+    font-size: 25px;
+    }
+
+    .apply_text{
+    font-size: 25px;
+    }
+
+    .btn_apply{
+    font-size: 25px;
+    }
+
+    .job_list > li::before, .offer_list > li::before{
+    font-size: 30px;
+    }
+
 }
 
 @media (max-width: 768.98px){
@@ -477,15 +556,16 @@ margin-bottom: 35px;
         width: 100%;
         top:80px;
         height:0px;
+        z-index: 999;
         transition: all 0.4s linear;
     }
   
     .navbar_list{
         flex-direction: column;
         background-color:antiquewhite;
-        gap: 30px;
+        gap: 40px;
         width: 100%;
-        height: 250px;
+        height: 350px;
     }
     
     .navbar_container{
@@ -540,6 +620,28 @@ margin-bottom: 35px;
         grid-template-columns: 500px;
         justify-content: center;
     }
+
+    .work_text{
+    font-size: 30px;
+    }
+
+    .requirements, .job_list, .offer_list{
+    font-size: 20px;
+    }
+
+    .btn_apply{
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 25px;
+    }
+
+    .apply_text{
+    font-size: 20px;
+    }
+
+    .job_list > li::before, .offer_list > li::before{
+        font-size: 25px;
+        }
 }
 
 @media (max-width: 510.98px){
@@ -550,6 +652,18 @@ margin-bottom: 35px;
     .staff_text{
     font-size: 30px;
     }
+
+    .work_text{
+    font-size: 20px;
+    }
+
+    .requirements, .job_list, .offer_list{
+        font-size: 15px;
+    }
+
+    .job_list > li::before, .offer_list > li::before{
+        font-size: 20px;
+        }
 }
 
 @media (max-width: 425.98px){
@@ -610,8 +724,20 @@ font-size: 20px;
         .subtitle_staff{
         font-size: 15px;
         }
+
+     .apply_text{
+    font-size: 15px;
+    }   
+
+    .apply_now{
+    margin-top: 30px;
+    }
+
+    .btn_apply{
+    font-size: 15px;
+    }
 }
 
 .input_burger:checked  ~ .container_list{
-    height: 250px;
+    height: 350px;
 }
