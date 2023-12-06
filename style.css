@@ -527,6 +527,7 @@ align-self: flex-end;
   .input_box input:focus,
   .input_box input:valid{
     outline-color:#e9bcb5;
+    border-color: #e9bcb5;
   }
   
   .input_box input:focus ~ label,
@@ -542,6 +543,7 @@ border-radius: 5px;
 font-size: 14px;
 background-color: #f7e1d7;
 border: 1px solid #22181c;
+color: #22181c;
 }
 
 @media (max-width: 1320.98px){
