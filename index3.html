@@ -14,7 +14,7 @@
     <nav class="navbar">
         <div class="navbar_container">
             <div class="logo">
-                <img class="logo_img" src="./img/Croissant love.png" alt="">
+                <a href="./index.html"><img class="logo_img" src="./img/Croissant love.png" alt=""></a>
                 <p class="logo_text">Croissant love</p>
             </div>
             <input type="checkbox" class="input_burger"  id="burger" />
@@ -51,7 +51,29 @@
             </div>
             <div class="apply_now">
                 <h2 class="apply_text">Якщо ти хочеш бути частинкою нашої команди, то натискай і реєстуйся!</h2>
-                <button class="btn_apply">Подати заявку</button>
+                <button id="myBtn">Подати заявку</button>
+                <div id="myModal" class="modal">
+                    <div class="modal_content">
+                        <span class="close">&times;</span>
+                        <div class="input_three">
+                            <div class="input_box">
+                              <img src="./img/profile.svg" alt="profile"/>
+                             <input type="text" name="firstName" required="required"/>
+                             <label>Name</label>
+                            </div>
+                            <div class="input_box">
+                              <img src="./img/phone.svg" alt="phone"/>
+                             <input type="tel" name="phone" required="required"/>
+                              <label>Mobile number</label>
+                            </div>
+                            <div class="input_box">
+                              <img src="./img/e-mail.svg" alt="e-mail"/>
+                              <input type="email" name="e-mail" required="required"/>
+                              <label>E-mail</label>
+                            </div>
+                    </div>
+                    <button class="btn_modal">Відправити</button>
+                </div>
             </div>
         </div>
     </section>
