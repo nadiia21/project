@@ -13,10 +13,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar_container">
+            <a href="./index.html">
             <div class="logo">
-                <a href="./index.html"><img class="logo_img" src="./img/Croissant love.png" alt=""></a>
+                <img class="logo_img" src="./img/Croissant love.png" alt="">
                 <p class="logo_text">Croissant love</p>
             </div>
+            </a>
             <input type="checkbox" class="input_burger"  id="burger" />
                 <label class="burger" for="burger">
                   <span></span>
@@ -50,29 +52,29 @@
             </ul>
             </div>
             <div class="apply_now">
-                <h2 class="apply_text">Якщо ти хочеш бути частинкою нашої команди, то натискай і реєстуйся!</h2>
-                <button id="myBtn">Подати заявку</button>
-                <div id="myModal" class="modal">
+                <h2 class="apply_text">Якщо ти хочеш бути частинкою нашої команди, то натискай і реєструйся!</h2>
+                <button class="button_element">Подати заявку</button>
+                <div id="myModal" class="modal hide">
                     <div class="modal_content">
-                        <span class="close">&times;</span>
+                        <span class="close modal_close">&times;</span>
                         <div class="input_three">
                             <div class="input_box">
                               <img src="./img/profile.svg" alt="profile"/>
                              <input type="text" name="firstName" required="required"/>
-                             <label>Name</label>
+                             <label>Ім'я</label>
                             </div>
                             <div class="input_box">
                               <img src="./img/phone.svg" alt="phone"/>
                              <input type="tel" name="phone" required="required"/>
-                              <label>Mobile number</label>
+                              <label>Номер телефону</label>
                             </div>
                             <div class="input_box">
                               <img src="./img/e-mail.svg" alt="e-mail"/>
                               <input type="email" name="e-mail" required="required"/>
-                              <label>E-mail</label>
+                              <label>Джімейл</label>
                             </div>
-                    </div>
-                    <button class="btn_modal">Відправити</button>
+                        </div>
+                    <button class="btn_modal modal_close">Відправити</button>
                 </div>
             </div>
         </div>
@@ -80,10 +82,10 @@
     <footer class="footer">
         <div class="footer_container">
             <div class="social_box">
-            <h3 class="social">Наші соцмережі:</h3>
-            <img src="./img/instagram.png" alt="instagram">
-            <img src="./img/telegram.png" alt="telegram">
-            <img src="./img/twitter.png" alt="twitter">
+                <h3 class="social">Наші соцмережі:</h3>
+                <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
+                <a href="#"><img src="./img/telegram.png" alt="telegram"></a>
+                <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
             </div>
             <hr>
             <div class="privacy_box">

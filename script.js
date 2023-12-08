@@ -1,17 +1,23 @@
-var modal = document.getElementById ('myModal');
-var btn = document.getElementById ("myBtn");
-var span = document.getElementsByClassName ("close")[0];
+const modalTrigger = document.querySelectorAll([".button_element", ".btn_element"]);
+const btn_close = document.querySelectorAll(".modal_close");
+modal = document.querySelector("#myModal");
 
-btn.onclick = function () {
- modal.style.display = "block";
+modalTrigger.forEach((btn) => {
+btn.addEventListener("click", openModal);
+});
+
+btn_close.forEach((btn) => {
+  btn.addEventListener("click", closeModal);
+});
+
+function closeModal() {
+modal.classList.add("hide");
+modal.classList.remove("show");
+document.body.style.overflow = "";
 }
 
-span.onclick = function () {
- modal.style.display = "none";
-}
-
-window.onclick = function(event) {
- if (event.target == modal) {
-     modal.style.display = "none";
-  }
+function openModal() {
+modal.classList.add("show");
+modal.classList.remove("hide");
+document.body.style.overflow = "hidden";
 }

@@ -12,10 +12,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar_container">
-            <div class="logo">
-                <a href="./index.html"><img class="logo_img" src="./img/Croissant love.png" alt=""></a>
-                <p class="logo_text">Croissant love</p>
-            </div>
+            <a href="./index.html">
+                <div class="logo">
+                    <img class="logo_img" src="./img/Croissant love.png" alt="">
+                    <p class="logo_text">Croissant love</p>
+                </div>
+            </a>
             <input type="checkbox" class="input_burger"  id="burger" />
                 <label class="burger" for="burger">
                   <span></span>
@@ -38,16 +40,46 @@
             <h2 class="title_first_part">Круасани з солодкою начинкою:</h2>
             <div class="grid">
                 <div class="grid_element">
-                    <img class="element_img" src="./img/banana.jpg" alt="Croissant with banana">
+                  <img class="element_img" src="./img/banana.jpg" alt="Croissant with banana">
                     <div class="element_text">
-                    <h2 class="title_element">Бананова насолода</h2>
-                    <p class="subtitle_element"><b>Склад:</b> круасан, шоколадна паста, банан, горіхи, кокосова стружка</p>
-                    <div class="price_wrapper">
-                       <p class="price_element"><b>Ціна:</b> 60 грн</p>
-                       <button class="btn_element">Замовити</button>
+                     <h2 class="title_element">Бананова насолода</h2>
+                     <p class="subtitle_element"><b>Склад:</b> круасан, шоколадна паста, банан, горіхи, кокосова стружка</p>
+                        <div class="price_wrapper">
+                         <p class="price_element"><b>Ціна:</b> 60 грн</p>
+                            <div class="button_modal">
+                             <button class="btn_element">Замовити</button>
+                                <div id="myModal" class="modal hide">
+                                    <div class="modal_content">
+                                     <span class="close modal_close">&times;</span>
+                                        <div class="input_four">
+                                            <div class="input_box2">
+                                             <input type="text" name="firstName" required="required"/>
+                                             <label>Прізвище та ім'я</label>
+                                            </div>
+                                            <div class="input_box2">
+                                             <input type="tel" name="phone" required="required"/>
+                                             <label>Номер телефону</label>
+                                            </div>
+                                            <div class="input_box2">
+                                             <input type="text" name="text" required="required"/>
+                                             <label>Адреса</label>
+                                            </div>
+                                            <div class="input_box2">
+                                                <input type="time" name="time" required="required"/>
+                                                <label>Час доставки</label>
+                                            </div>
+                                        </div>
+                                        <div class="checbox_container">
+                                            <label for="myCheckbox">Вам більше 18:</label>
+                                            <input type="checkbox" id="myCheckbox" name="myCheckbox">
+                                        </div>
+                                        <button class="btn_modal2 modal_close">Замовити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                </div>
+                </div>  
                 <div class="grid_element">
                     <img class="element_img" src="./img/almond.jpg" alt="Croissant with almond">
                     <div class="element_text">
@@ -183,9 +215,9 @@
         <div class="footer_container">
             <div class="social_box">
             <h3 class="social">Наші соцмережі:</h3>
-            <img src="./img/instagram.png" alt="instagram">
-            <img src="./img/telegram.png" alt="telegram">
-            <img src="./img/twitter.png" alt="twitter">
+            <a href="#"><img src="./img/instagram.png" alt="instagram"></a>
+            <a href="#"><img src="./img/telegram.png" alt="telegram"></a>
+            <a href="#"><img src="./img/twitter.png" alt="twitter"></a>
             </div>
             <hr>
             <div class="privacy_box">
